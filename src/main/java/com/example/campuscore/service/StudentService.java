@@ -22,4 +22,13 @@ public class StudentService {
     public List<Student> getAllStudents(){
         return studentRepo.findAll();
     }
+
+    public Student getStudentById(Long id){
+        return studentRepo.findById(id).orElse(null);
+    }
+
+    public String deleteStudent(Long id){
+        studentRepo.deleteById(id);
+        return "Student Successfully Deleted";
+    }
 }
