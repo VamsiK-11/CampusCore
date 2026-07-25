@@ -1,0 +1,6 @@
+.gitignore
+src
+docker-compose.yml
+README.md
+.mvn
+.idea
