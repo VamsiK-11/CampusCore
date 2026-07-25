@@ -131,10 +131,16 @@ Package Application - Haven't Included JUnit
 mvn clean package -DskipTests
 ```
 
-Run the application
+If Running the application locally
 
 ```bash
 mvn spring-boot:run
+```
+
+If Running the application using docker
+
+```bash
+docker compose up --build
 ```
 
 ---
