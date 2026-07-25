@@ -44,16 +44,16 @@ The primary goal of this project is not only to build a functional backend appli
 
 ## Project Roadmap
 
-| Version | Milestone | Status |
-|----------|-----------|--------|
+| Version | Milestone | Status       |
+|----------|-----------|--------------|
 | v1.0.0 | Spring Boot CRUD Application | ✅ Completed |
-| v1.1.0 | Dockerize Application | ⏳ Planned |
-| v1.2.0 | Docker Compose | ⏳ Planned |
-| v1.3.0 | Jenkins CI/CD Pipeline | ⏳ Planned |
-| v1.4.0 | Deploy to AWS EC2 | ⏳ Planned |
-| v1.5.0 | Infrastructure with Terraform | ⏳ Planned |
-| v1.6.0 | Kubernetes Deployment | ⏳ Planned |
-| v1.7.0 | Monitoring using Prometheus & Grafana | ⏳ Planned |
+| v1.1.0 | Dockerize Application | ✅ Completed |
+| v1.2.0 | Docker Compose | ✅ Completed  |
+| v1.3.0 | Jenkins CI/CD Pipeline | ⏳ Planned   |
+| v1.4.0 | Deploy to AWS EC2 | ⏳ Planned   |
+| v1.5.0 | Infrastructure with Terraform | ⏳ Planned   |
+| v1.6.0 | Kubernetes Deployment | ⏳ Planned   |
+| v1.7.0 | Monitoring using Prometheus & Grafana | ⏳ Planned   |
 
 ---
 
