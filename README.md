@@ -98,7 +98,10 @@ CampusCore
 │               └── example
 │                   └── campuscore
 │
+├── .dockerignore
 ├── .gitignore
+├── Dockerfile
+├── docker-compose.yml
 ├── mvnw
 ├── mvnw.cmd
 ├── pom.xml
@@ -122,8 +125,13 @@ Navigate into the project
 cd CampusCore
 ```
 
-Run the application
+Package Application - Haven't Included JUnit 
 
+```bash
+mvn clean package -DskipTests
+```
+
+Run the application
 
 ```bash
 mvn spring-boot:run
