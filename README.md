@@ -142,7 +142,6 @@ If Running the application using docker
 ```bash
 docker compose up --build
 ```
-
 ---
 
 ## API Documentation
