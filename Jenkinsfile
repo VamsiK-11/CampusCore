@@ -19,9 +19,7 @@ pipeline{
         stage('Deploy'){
             steps {
                 echo 'Deploying the spring boot'
-                dir('CampusCore'){
                     sh 'docker compose up --build -d'
-                }
             }
         }
 
