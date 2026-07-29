@@ -4,7 +4,6 @@ pipeline{
         stage('Build') {
             steps {
                 echo 'Packaging Spring Boot application...'
-                dir('CampusCore') {
                     sh 'mvn clean package -DskipTests'
                 }
             }
@@ -13,9 +12,7 @@ pipeline{
         stage('Clean Deployment') {
             steps {
                 echo 'Stopping existing containers...'
-                dir('CampusCore') {
                     sh 'docker compose down || true'
-                }
             }
         }
 
