@@ -1,13 +1,6 @@
 pipeline{
     agent any
     stages{
-        stage('Checkout') {
-            steps {
-                echo 'Cloning CampusCore repository...'
-                sh 'git clone https://github.com/VamsiK-11/CampusCore.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo 'Packaging Spring Boot application...'
