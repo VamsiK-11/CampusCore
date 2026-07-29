@@ -98,10 +98,14 @@ CampusCore
 │               └── example
 │                   └── campuscore
 │
+├── target
+│   └── CampusCore-0.0.1-SNAPSHOT.jar
+│
 ├── .dockerignore
 ├── .gitignore
-├── Dockerfile
 ├── docker-compose.yml
+├── Dockerfile
+├── Jenkinsfile
 ├── mvnw
 ├── mvnw.cmd
 ├── pom.xml
