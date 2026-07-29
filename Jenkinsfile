@@ -1,35 +1,34 @@
-pipeline{
+pipeline {
     agent any
-    stages{
+    stages {
         stage('Build') {
             steps {
                 echo 'Packaging Spring Boot application...'
-                    sh 'mvn clean package -DskipTests'
-                }
+                sh 'mvn clean package -DskipTests'
             }
         }
 
         stage('Clean Deployment') {
             steps {
                 echo 'Stopping existing containers...'
-                    sh 'docker compose down || true'
+                sh 'docker compose down || true'
             }
         }
 
-        stage('Deploy'){
+        stage('Deploy') {
             steps {
                 echo 'Deploying the spring boot'
-                    sh 'docker compose up --build -d'
+                sh 'docker compose up --build -d'
             }
         }
 
     }
-    post{
-        success{
+    post {
+        success {
             mail(
-                    to:"vamsitemp69@gmail.com",
+                    to: "vamsitemp69@gmail.com",
                     subject: "SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                    body:"""
+                    body: """
                     Hello,
 
                     Build Successfull
@@ -44,11 +43,11 @@ pipeline{
                     """
             )
         }
-        failure{
+        failure {
             mail(
-                    to:"vamsitemp69@gmail.com",
+                    to: "vamsitemp69@gmail.com",
                     subject: "FAILURE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                    body:"""
+                    body: """
                     Hello,
 
                     Build Failed
