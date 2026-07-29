@@ -17,7 +17,7 @@ services:
     image: campuscore:1.0
     container_name: campus-core
     ports:
-      - "8080:8080"
+      - "7070:8080"
     depends_on:
       - mysql
     environment:
