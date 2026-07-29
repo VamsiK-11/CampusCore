@@ -49,7 +49,7 @@ The primary goal of this project is not only to build a functional backend appli
 | v1.0.0 | Spring Boot CRUD Application | ✅ Completed |
 | v1.1.0 | Dockerize Application | ✅ Completed |
 | v1.2.0 | Docker Compose | ✅ Completed  |
-| v1.3.0 | Jenkins CI/CD Pipeline | ⏳ Planned   |
+| v1.3.0 | Jenkins CI/CD Pipeline | ✅ Completed   |
 | v1.4.0 | Deploy to AWS EC2 | ⏳ Planned   |
 | v1.5.0 | Infrastructure with Terraform | ⏳ Planned   |
 | v1.6.0 | Kubernetes Deployment | ⏳ Planned   |
@@ -149,7 +149,7 @@ docker compose up --build
 Swagger UI
 
 ```
-http://localhost:8080/swagger-ui/index.html
+http://localhost:7070/swagger-ui/index.html
 ```
 
 ---
